@@ -1,0 +1,31 @@
+{
+  "name": "studyflow",
+  "productName": "StudyFlow",
+  "version": "1.1.2",
+  "description": "学习记录桌面版（Electron 包装，普通窗口）",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make:win": "node scripts/build-win.js",
+    "publish": "electron-forge publish"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-squirrel": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "electron": "^33.0.0",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.5"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true,
+    "electron-winstaller@5.4.4": true
+  }
+}
